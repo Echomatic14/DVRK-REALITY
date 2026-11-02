@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DVRK REALITY | Esports</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #050909;
+      color: #fff;
+      line-height: 1.6;
+    }
+    a { color: inherit; text-decoration: none; }
+    nav {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 22px 8%; background: #081110; border-bottom: 1px solid #1c3733;
+      position: sticky; top: 0;
+    }
+    .brand { font-weight: 900; letter-spacing: 2px; font-size: 21px; }
+    .brand span, .accent { color: #70aaa2; }
+    .links { display: flex; gap: 24px; align-items: center; font-size: 14px; }
+    .links a:hover { color: #70aaa2; }
+    .join-small { background: #fff; color: #050909; padding: 9px 15px; border-radius: 4px; font-weight: bold; }
+    .hero {
+      min-height: 560px; padding: 80px 8%; display: flex; align-items: center;
+      justify-content: space-between; gap: 40px;
+      background: radial-gradient(circle at 75% 50%, #153b37, transparent 42%), #070d0c;
+    }
+    .hero-copy { max-width: 570px; }
+    .eyebrow { color: #70aaa2; letter-spacing: 3px; font-size: 12px; font-weight: bold; }
+    h1 { font-size: clamp(48px, 7vw, 82px); line-height: .98; letter-spacing: -3px; margin: 18px 0; }
+    .hero p, .section-copy { color: #a6b4b1; max-width: 550px; }
+    .buttons { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 28px; }
+    .button { display: inline-block; padding: 13px 20px; border: 1px solid #6c9993; border-radius: 4px; font-weight: bold; font-size: 13px; }
+    .button.primary { background: #fff; color: #050909; border-color: #fff; }
+    .button:hover { opacity: .82; }
+    .logo { width: min(330px, 38vw); border-radius: 8px; }
+    .stats { display: flex; justify-content: center; gap: 90px; padding: 28px 5%; background: #0b1514; border-block: 1px solid #1c3733; text-align: center; }
+    .stats strong { display: block; font-size: 30px; }
+    .stats span { color: #93a5a1; font-size: 11px; letter-spacing: 1px; }
+    section { padding: 85px 8%; }
+    h2 { font-size: clamp(30px, 4vw, 43px); line-height: 1.1; margin: 12px 0 18px; }
+    .about { background: #080f0e; }
+    .cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 30px; }
+    .card { background: #0d1a18; border: 1px solid #24413c; border-radius: 6px; padding: 28px; }
+    .card h3 { margin: 10px 0; font-size: 21px; }
+    .card p { color: #a6b4b1; font-size: 14px; }
+    .coaching, .contact { text-align: center; background: #0a1412; }
+    .coaching p, .contact p { color: #a6b4b1; max-width: 600px; margin: 0 auto; }
+    .coaching .button, .contact .button { margin-top: 24px; }
+    footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding: 25px 8%; border-top: 1px solid #1c3733; color: #879995; font-size: 12px; }
+    footer .credit { color: #70aaa2; font-weight: bold; letter-spacing: 1px; }
+    @media (max-width: 700px) {
+      nav { padding: 18px 5%; }
+      .links { gap: 11px; font-size: 11px; }
+      .links a:nth-child(3) { display: none; }
+      .join-small { padding: 8px 10px; }
+      .hero { flex-direction: column-reverse; text-align: center; padding: 60px 6%; }
+      .logo { width: 220px; }
+      .hero p { margin: auto; }
+      .buttons { justify-content: center; }
+      .stats { gap: 25px; }
+      .stats strong { font-size: 24px; }
+      .cards { grid-template-columns: 1fr; }
+      section { padding: 65px 6%; }
+      footer { justify-content: center; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a class="brand" href="#">DVRK <span>REALITY</span></a>
+    <div class="links">
+      <a href="#about">About</a>
+      <a href="#esports">Esports</a>
+      <a href="#coaching">Coaching</a>
+      <a class="join-small" href="https://discord.gg/CgQVuynG8">JOIN</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-copy">
+      <div class="eyebrow">WELCOME TO DVRK REALITY</div>
+      <h1>DVRK<br><span class="accent">REALITY.</span></h1>
+      <p>A Fortnite esports team built around competition, improvement and community. We're just getting started.</p>
+      <div class="buttons">
+        <a class="button primary" href="https://discord.gg/CgQVuynG8">JOIN OUR DISCORD</a>
+        <a class="button" href="#about">LEARN MORE</a>
+      </div>
+    </div>
+    <img class="logo" src="logo.jpg" alt="DVRK Reality logo">
+  </header>
+
+  <div class="stats">
+    <div><strong>45+</strong><span>MEMBERS</span></div>
+    <div><strong>01</strong><span>TEAM</span></div>
+    <div><strong>∞</strong><span>AMBITION</span></div>
+  </div>
+
+  <section class="about" id="about">
+    <div class="eyebrow">WHO WE ARE</div>
+    <h2>BUILT TO COMPETE.</h2>
+    <p class="section-copy">DVRK REALITY is a Fortnite-based esports organization founded by VEYRO. With a growing community of 45+ members, our goal is to develop players, compete in tournaments and become a recognized name in esports.</p>
+  </section>
+
+  <section id="esports">
+    <div class="eyebrow">WHAT WE DO</div>
+    <h2>MORE THAN JUST GAMING.</h2>
+    <p class="section-copy">We're building a place for competitive players and the wider Fortnite community.</p>
+    <div class="cards">
+      <div class="card">
+        <div class="eyebrow">01 / COMPETITIVE</div>
+        <h3>Fortnite Esports</h3>
+        <p>Building our roster, developing talent and working towards competing in Fortnite tournaments.</p>
+      </div>
+      <div class="card">
+        <div class="eyebrow">02 / COMMUNITY</div>
+        <h3>Our Community</h3>
+        <p>Meet other players, find teammates and be part of the DVRK REALITY journey.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="coaching" id="coaching">
+    <div class="eyebrow">IMPROVE YOUR GAME</div>
+    <h2>COACHING & DEVELOPMENT.</h2>
+    <p>Want to improve at Fortnite? Join our Discord and find out more about coaching and opportunities with the team.</p>
+    <a class="button primary" href="https://discord.gg/CgQVuynG8">CHECK OUT OUR DISCORD</a>
+  </section>
+
+  <section class="contact">
+    <div class="eyebrow">YOUR NEXT MOVE</div>
+    <h2>JOIN DVRK REALITY.</h2>
+    <p>Be part of the community. The journey starts here.</p>
+    <a class="button primary" href="https://discord.gg/CgQVuynG8">JOIN THE TEAM</a>
+  </section>
+
+  <footer>
+    <span>© 2026 DVRK REALITY. All rights reserved.</span>
+    <span>Founded by VEYRO</span>
+    <span class="credit">WEBSITE BY ZARZOUR</span>
+  </footer>
+</body>
+</html>
